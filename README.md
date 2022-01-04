@@ -1,10 +1,10 @@
 # Static Methods
 
-A beginner level task for practicing static methods.
+Beginner level task for practicing static methods.
 
 Estimated time to complete the task - 0.5h.
 
-The task requires .NET 6 SDK.
+The task requires .NET 6 SDK installed.
 
 
 ## Task Description
@@ -14,9 +14,9 @@ The task has two sections with twenty-two sub-tasks. Each sub-task is a small co
 
 ## Static Methods
 
-Read [Method signatures](https://docs.microsoft.com/en-us/dotnet/csharp/methods#method-signatures) and [Return values](https://docs.microsoft.com/en-us/dotnet/csharp/methods#return-values) sections from the [Method](https://docs.microsoft.com/en-us/dotnet/csharp/methods) article.
+Read the [Method signatures](https://docs.microsoft.com/en-us/dotnet/csharp/methods#method-signatures) and the [Return values](https://docs.microsoft.com/en-us/dotnet/csharp/methods#return-values) sections from the [Method](https://docs.microsoft.com/en-us/dotnet/csharp/methods) article.
 
-Open [ReturningMethods.cs](StaticMethods/ReturningMethods.cs) file, and implement the methods from the table below.
+Open the [ReturningMethods.cs](StaticMethods/ReturningMethods.cs) file, and implement the methods from the table below.
 
 | Method Name        | Return Type | Return Value (Literal) |
 |--------------------|-------------|------------------------|
@@ -41,17 +41,17 @@ public static RETURN-TYPE METHOD-NAME()
 }
 ```
 
-Go to the line with [TODO #1-1](StaticMethods/ReturningMethods.cs#L5) comment. Paste the template right after the comment.
+Go to the line with the [TODO #1-1](StaticMethods/ReturningMethods.cs#L5) comment. Paste the template right after the comment.
 
 ```cs
-// TODO #1-1: Add the static method here with name "ReturnInt" that should return -1234567 literal (int return type).
+// TODO #1-1: Add the static method here with the name "ReturnInt" that should return -1234567 literal (int return type).
 public static RETURN-TYPE METHOD-NAME()
 {
     return RETURN-VALUE;
 }
 ```
 
-Replace the METHOD-NAME with _ReturnInt_.
+Replace METHOD-NAME with _ReturnInt_.
 
 ```cs
 // TODO #1-1: Add the static method here with name "ReturnInt" that should return -1234567 literal (int return type).
@@ -61,7 +61,7 @@ public static RETURN-TYPE ReturnInt()
 }
 ```
 
-Replace the RETURN-TYPE with _int_ and RETURN-VALUE with _-1234567_ literal.
+Replace RETURN-TYPE with _int_ and RETURN-VALUE with the _-1234567_ literal.
 
 ```cs
 // TODO #1-1: Add the static method here with name "ReturnInt" that should return -1234567 literal (int return type).
@@ -82,14 +82,14 @@ public static int ReturnInt()
 
 Implement the other methods in the same way.
 
-Read [Method invocation](https://docs.microsoft.com/en-us/dotnet/csharp/methods#method-invocation) section, and learn how static methods are invoked. Open [ReturningMethodsTests.cs](StaticMethods.Tests/ReturningMethodsTests.cs), navigate to [ReturnInt_ReturnsInteger](StaticMethods.Tests/ReturningMethodsTests.cs#L10) unit test, and find out how _ReturnInt_ method is invoked in the unit test.
+Read the [Method invocation](https://docs.microsoft.com/en-us/dotnet/csharp/methods#method-invocation) section, and learn how static methods are invoked. Open [ReturningMethodsTests.cs](StaticMethods.Tests/ReturningMethodsTests.cs), navigate to the [ReturnInt_ReturnsInteger](StaticMethods.Tests/ReturningMethodsTests.cs#L10) unit test, and find out how the _ReturnInt_ method is invoked in the unit test.
 
 
 ## Method Parameters
 
-Read [Passing parameters by value](https://docs.microsoft.com/en-us/dotnet/csharp/methods#passing-parameters-by-value) section from the [Method](https://docs.microsoft.com/en-us/dotnet/csharp/methods) article.
+Read the [Passing parameters by value](https://docs.microsoft.com/en-us/dotnet/csharp/methods#passing-parameters-by-value) section from the [Method](https://docs.microsoft.com/en-us/dotnet/csharp/methods) article.
 
-Open [PassthroughMethods.cs](StaticMethods/PassthroughMethods.cs) file, and implement the methods from the table below.
+Open the [PassthroughMethods.cs](StaticMethods/PassthroughMethods.cs) file, and implement the methods from the table below.
 
 | Method Name        | Return Type | Parameter Name   | Parameter Type  |
 |--------------------|-------------|------------------|-----------------|
@@ -105,7 +105,7 @@ Open [PassthroughMethods.cs](StaticMethods/PassthroughMethods.cs) file, and impl
 | ReturnByte         | byte        | byteParameter    | byte            |
 | ReturnBool         | bool        | boolParameter    | bool            |
 
-Start with implementing the _ReturnInt_ method. Go to the line with [TODO #2-1](StaticMethods/PassthroughMethods.cs#L5) comment, and add the method definition like you did in the previous section.
+Start with implementing the _ReturnInt_ method. Go to the line with the [TODO #2-1](StaticMethods/PassthroughMethods.cs#L5) comment, and add the method definition like you did in the previous section.
 
 ```cs
 // TODO #2-1: Add the static method here with name "ReturnInt" that gets "intParameter" parameter ("int" type) and returns it.
@@ -114,7 +114,7 @@ public static int ReturnInt()
 }
 ```
 
-Then, add _method parameter_ with specified parameter type.
+Then, add _method parameter_ with the specified parameter type.
 
 ```cs
 // TODO #2-1: Add the static method here with name "ReturnInt" that gets "intParameter" parameter ("int" type) and returns it.
@@ -135,7 +135,7 @@ public static int ReturnInt(int intParameter)
 
 Implement the other methods in the same way.
 
-Open [PassthroughMethodsTests.cs](StaticMethods.Tests/PassthroughMethodsTests.cs), navigate to [ReturnInt_ReturnsInt](StaticMethods.Tests/PassthroughMethodsTests.cs#L12) unit test.
+Open [PassthroughMethodsTests.cs](StaticMethods.Tests/PassthroughMethodsTests.cs), navigate to the [ReturnInt_ReturnsInt](StaticMethods.Tests/PassthroughMethodsTests.cs#L12) unit test.
 
 ```cs
 [TestCase(int.MaxValue, ExpectedResult = int.MaxValue)]
